@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CaseClicker</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" href="csgo.png" sizes="128x128">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/stylesheet.css" media="screen" title="no title" charset="utf-8">
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+	
+    </script>
+</head>
+<body>
+    <div class="container noselect">
+        <div class="notification hidden" id="notif">Check the News Tab for information about news/changes with CSGOClicker</div>
+           <div class="navbar">
+            <ul>
+                <li>
+                    <a href="https://KingofKFCJamal.github.io/CaseClicker" class="headerLogo"></a>
+                </li>
+                <div class="settings"></div>
+                <div class="about">About</div>
+				<div class="profile">Welcome Player 1 (You)</div>
+				<div class="profileavatar"><img src="https://i.imgur.com/ICK2lr1.jpg" width="50" height="50"></div>
+				
+            </ul>
+        </div>
+        <div class="settingsList hidden">
+            <li>
+                <h1>SETTINGS</h1>
+            </li>
+			<div class="test">
+                    &nbsp;&nbsp;
+                    <b>
+					<font size="56" style="color:white;">Upload Avatar (JPEG/PNG):</font>
+                        <input type="file" id="bannerImg"> 
+						<div class="tableCanner">
+						<img src="https://i.imgur.com/ICK2lr1.jpg" id="tableBanner" width="70" height="70">
+						</div>
+						<div id="res"></div>
+                    </b>
+                </div>
+				<br>
+				<div class="test2">
+                    &nbsp;&nbsp;
+                    <b>
+						<font size="56" style="color:white;">Enter Username:</font>
+                        <input type="text" id="username" name="username" value=""> 
+						<input type="submit" value="Submit">
+						<button id="save">Save</button>
+                    </b>
+                    <br>
+                </div>
+            <div class="audio">
+				<div class="pop">
+				&nbsp;&nbsp;
+			<input type="checkbox" id="popupCheckbox"><b><font size="56" style="color:white;">Disable Popup</font></b>
+				</div>
+                <div class="sg">
+                    &nbsp;&nbsp;
+                    <audio id="startgame" src="sounds/start-game.mp3" type="audio/mp3"></audio>
+                    <input type="checkbox" id="lostCheckbox">
+                    <b>
+                        <font size="56" style="color:white;">Disable/Enable Lost Sound</font>
+                    </b>
+                    <br>
+                </div>
+                <div class="be">
+                    &nbsp;&nbsp;
+                    <audio id="botentered" src="sounds/new-item.mp3" type="audio/mp3"></audio>
+                    <input type="checkbox" id="botCheckbox">
+                    <b>
+                        <font size="56" style="color:white;">Disable/Enable New Opponent Sound</font>
+                    </b>
+                    <br>
+                </div>
+                <div class="won">
+                    &nbsp;&nbsp;
+                    <audio id="youwon" src="sounds/win-pot.mp3" type="audio/mp3"></audio>
+                    <input type="checkbox" id="wonCheckbox">
+                    <b>
+                        <font size="56" style="color:white;">Disable/Enable Won Sound</font>
+                    </b>
+                    <br>
+                </div>
+                <div class="a">
+                    &nbsp;&nbsp;
+                    <audio id="accepted" src="sounds/click.wav" type="audio/wav"></audio>
+					<input type="checkbox" id="acceptedCheckbox">
+                    <b>
+                        <font size="56" style="color:white;">Disable/Enable Accepted Sound</font>
+                    </b>
+                    <br>
+                </div>
+                <div class="mc">
+                    &nbsp;&nbsp;
+                    <audio id="menu" src="sounds/menuclick.wav" type="audio/wav"></audio>
+					<input type="checkbox" id="menuCheckbox">
+                    <b>
+                        <font size="56" style="color:white;">Disable/Enable Menu Sound</font>
+                    </b>
+                    <br>
+                </div>
+                <div class="ub">
+                    &nbsp;&nbsp;
+                    <audio id="unbox" src="sounds/itemreveal.mp3" type="audio/mp3"></audio>
+                    <input type="checkbox" id="unboxCheckbox">
+                    <b>
+                        <font size="56" style="color:white;">Disable/Enable Unbox Sound</font>
+                    </b>
+                </div> 
+            </div>
+            <div class="clearGameState">Clear Game Save</div>
+        </div>
+        <div class="aboutContainer">
+            <div class="aboutInfo">
+                <div class="aboutHeader">Welcome to CaseClicker.</div>
+                <div class="aboutBody">CaseClicker is an incremental clicker game based around csgo and the jackpot/skin community. The goal is
+                    to open cases and get rich.</div>
+                <div class="aboutDevelopers">
+                    <div class="aboutDev">
+                        <a class="aboutDevName" href="https://steamcommunity.com/id/bnned">banned</a>
+                        <div class="aboutDevDesc">With CSGOClicker just being a thought, banned took it on as a learners project. Since version one,
+                            CSGOClicker has come a long way.</div>
+                    </div>
+                    <div class="aboutDev">
+                        <a class="aboutDevName" href="https://steamcommunity.com/id/roflzilla_">roflzilla</a>
+                        <div class="aboutDevDesc">Helping with logic and ideas, roflzilla assists in bringing the project to life.</div>
+                    </div>
+                    <div class="aboutDev">
+                        <a class="aboutDevName" href="https://steamcommunity.com/id/KingofKFC">King of KFC Jamal</a>
+                        <div class="aboutDevDesc">Continuing the project by editing and providing updates for it.</div>
+                    </div>
+                    <div class="aboutDev">
+                        <a class="aboutDevName" href="https://steamcommunity.com/profiles/76561198168257067">Toshiyuki</a>
+                        <div class="aboutDevDesc">Added New Cases</div>
+                    </div>
+					<div class="aboutDev">
+                        <a class="aboutDevName" href="https://www.reddit.com/r/csgoclicker/">Reddit</a>
+                        <div class="aboutDevDesc">The Official Reddit for CSGOClicker</div>
+                    </div>
+					<div class="aboutDev">
+                        <a class="aboutDevName" href="https://discord.gg/9zSrah6">Discord</a>
+                        <div class="aboutDevDesc">The Official Discord for CSGOClicker</div>
+                    </div>
+                </div>
+                <div class="aboutLinks"></div>
+            </div>
+        </div>
+        <div class="tooltipAnchor" style="display: none;"></div>
+        <div class="main">
+            <div class="modalWindow" style="display: none;">
+                <div class="modalMain winner"><div class="modalClose">X</div><div class="winnerModalHeader">Congratulations!</div> <div class="winnerModalMessage">You won <span class="winnerAmount">$9525.03</span> worth of skins.</div><div class="winnerModalWarnMessage" style="display: none;"><i class="fa fa-exclamation-triangle"></i> You are over your max inventory space. Upgrade inventory space or sell some items to bet and unbox again.</div><div class="winnerModalSkinContainer"> <div class="inventoryItem covert" id="item237" title="Souvenir AWP | Dragon Lore WW"><div class="itemPrice">$1033.35</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5cB1g_zMyoD0mlOx5UM5ZWClcYCUdgU3Z1rQ_FK-xezngZO46MzOziQ1vSMmtCmIyxfkgx5SLrs4SgJFJKs/70fx70f"> </div><div class="inventoryItem covert" id="item42" title="Souvenir AWP | Dragon Lore FT"><div class="itemPrice">$1127.97</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5cB1g_zMyoD0mlOx5UM5ZWClcYCUdgU3Z1rQ_FK-xezngZO46MzOziQ1vSMmtCmIyxfkgx5SLrs4SgJFJKs/70fx70f"> </div><div class="inventoryItem covert" id="item148" title="Souvenir AWP | Dragon Lore MW"><div class="itemPrice">$1710.63</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5Mx2gv3--Y3nj1H6qBFvMWHyIo7Adw9raF6GrlK9lLi-jJO7tJ_JzyNh63F3sX_emUPkgQYMMLL2MDRAbQ/70fx70f"> </div><div class="inventoryItem classified" id="item314" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item217" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item333" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item13" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item109" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item85" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item66" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item59" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item92" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item198" title="Souvenir M4A1-S | Knight MW"><div class="itemPrice">$365.01</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item204" title="Souvenir M4A1-S | Knight MW"><div class="itemPrice">$365.01</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem classified" id="item48" title="Souvenir M4A1-S | Knight MW"><div class="itemPrice">$365.01</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="inventoryItem stattrak" id="item335" title="StatTrak™ AWP | Graphite FN"><div class="itemPrice">$196.79</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAZt7PDaZDBS4NmJlpKKgfjLP7LWnn9u5MRjjeyPoIqg0VCx-UFrN2v7JNCWIQVsYlGGqwS5lOrm1MW9uJ7Kynow6yVw52GdwULDeIeGVQ/70fx70f"> </div><div class="inventoryItem covert" id="item336" title="M4A1-S | Hyper Beast BS"><div class="itemPrice">$9.89</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alDLPIhm5D18d0i_rVyoTwiUKtlB89IT6mOtTDdFA7M1-ErAe_xOnvhMDpv53KnXFqvyd2t3razUfliRsaZuxrgfCACQLJHLRQjkw/70fx70f"> </div><div class="inventoryItem covert" id="item337" title="M4A4 | Desert-Strike BS"><div class="itemPrice">$2.53</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszceClD4s-im5KGqP_xMq3IqWdQ-sJ0xLiTpNqs2FC1-0ptajinJIGWdQA3YF7U-gS9le3q0Z6_vsuby3djvSE8pSGKPaDC5MU/70fx70f"> </div><div class="inventoryItem covert" id="item338" title="AWP | Oni Taiji WW"><div class="itemPrice">$28.33</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17PLfYQJK7dK4jYG0mvLwOq7cqWdQ-sJ0xLuWpYql21W2r0A9N2r3d4PEdw86Mw2C_Afoxea8hJDo6J_Pn3ZjsyU8pSGKnbCLqT8/70fx70f"> </div><div class="inventoryItem stattrak" id="item339" title="StatTrak™ M4A1-S | Golden Coil WW"><div class="itemPrice">$58.07</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uOxh7-Gw_alIITCmGpa7cd4nuz-8oP5jGu5rhc1JjTtLIfEdVQ-YA6G-FbqwOzs05Tp6smdzHdiuCUi5y7YnRG1gB9OOLE50OveFwutvS5J8A/70fx70f"> </div><div class="inventoryItem stattrak" id="item340" title="StatTrak™ M249 | Magma FN"><div class="itemPrice">$1.05</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-jxcjhhwszHcy5L6NW3mr-HnvD8J4Tdl3lW7Yty0uiSrY-s2wHgqEE6Z2zwJdCVegY8NAmB_ljtkL_mjZG07s-fwCc3pGB8stBeF8Zo/70fx70f"> </div><div class="inventoryItem covert" id="item341" title="R8 Revolver | Fade MW"><div class="itemPrice">$4.02</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopL-zJAt21uH3cDx96t2ykb-ZkuH7P63UhFRd4cJ5nqfA89uiiVGx8hVkYWDwItOSdwc-M1DZr1bowb3u18Tqus-fmCM17CQn-z-DyMgtirei/70fx70f"> </div><div class="inventoryItem covert" id="item342" title="M4A1-S | Golden Coil FN"><div class="itemPrice">$56.97</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uOxh7-Gw_alIITCmGpa7cd4nuz-8oP5jGu4ohQ0J3f2I4LEIVM5Zg3R-lW6lby5hse_tJqfy3Jj6CIq43jenBfiiB9IOOJvm7XAHiKtaglX/70fx70f"> </div><div class="inventoryItem covert" id="item343" title="SSG 08 | Blood in the Water FT"><div class="itemPrice">$29.45</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopamie19f0Ob3YjVD_teJmYWPnuL5DLfQhGxUppdw0-3Hodyj3gThrhJuNT-gJ4-XJlc9ZwuD_1Low7u60JO-6pjPynp9-n51FR7Bxmg/70fx70f"> </div><div class="inventoryItem stattrak" id="item344" title="StatTrak™ R8 Revolver | Reboot FN"><div class="itemPrice">$12.00</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopL-zJAt21uH3cih9_oSJl5mJkuXnI7TDglRd4cJ5ntbN9J7yjRqw_hY-a2v0co-cIwI-YFHR_wO2wuno0MLtu8_ByCNj6HMrti6Im0fhn1gSOcqlDG5e/70fx70f"> </div><div class="inventoryItem stattrak" id="item345" title="StatTrak™ P2000 | Imperial FN"><div class="itemPrice">$1.65</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovrG1eVcwg8zJfAJSvozmxL-CmufxIbLQmlRD7cFOhuDG_Zi7iwDjrkFsZGrzI4GXd1NqYA7Zr1ntl-i7hJK7tMmbnyZgvyIhtniMmAv3308P9JxMBw/70fx70f"> </div><div class="inventoryItem knife" id="item346" title="✯ Butterfly Knife | Crimson Web WW"><div class="itemPrice">$150.05</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf0ebcZThQ6tCvq4iSqODxMajum25V4dB8teXA54vwxgW2qEc5NW-iIYORcFI5NwzQ8lS7lOq50MW7tJSbnXQy7yRx4H7bnRGpwUYbInjudbk/70fx70f"> </div><div class="inventoryItem covert" id="item347" title="M4A4 | X-Ray FT"><div class="itemPrice">$5.95</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszQYzxb09Hiq42Ok_7hPoTdl3lW7Yt027yYoo6h0QWx_hVrNmGld4aRJAc5MwnWrATswbrogMe9u5vBmCFlpGB8sp0wSwbi/70fx70f"> </div><div class="inventoryItem covert" id="item348" title="AUG | Chameleon FT"><div class="itemPrice">$1.54</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJB5N27kYyOmPn1OqnUqWZU7Mxkh9bN9J7yjRqxrUNua2H6J4SSJAZvNwmF8gC7xOrrjMLp6pvBz3Bm7ykk4XvZmUDhn1gSOYJAEb79/70fx70f"> </div><div class="inventoryItem covert" id="item349" title="USP-S | Kill Confirmed FN"><div class="itemPrice">$56.95</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09-jq5WYh8j_OrfdqWhe5sN4mOTE8bP5gVO8v109YDj0do7Dcw9taA6C81K_k-_n1pfp6MnOnSZhu3Qm4SrfzBbkg01McKUx0iC2I2fd/70fx70f"> </div></div></div>
+            </div>
+            <canvas id="drawing"></canvas>
+            <!-- <canvas id="canvas"></canvas> -->
+            <div class="left">
+                <div class="display" style="width: 405px;">
+                    <div class="jackpot" style="display: none;">
+                        <div class="jackpotTopContainer">
+                            <div class="jackpotTop">
+                                <!--
+                  <div class="canvasContainer">
+        						<canvas id="canvasCircle" width="450" height="450"></canvas>
+        					</div>
+                -->
+                                <div class="jackpotStats">
+                                    <div class="jackpotCountDownLabel">Time Left</div>
+                                    <div class="jackpotCountDown">0</div>
+									<div class="winneravatar"><img src="https://i.imgur.com/ICK2lr1.jpg" width="70" height="70"></div>
+                                    <div class="winnerIs">Player 1 (You) has won $9525.03 with 93.54%</div>
+                                    <div class="jackpotCurrentWorth">Pot: $9525.03</div>
+                                    <div class="jackpotPercentOfTickets">Your odds to win: 93.54%</div>
+                                </div>
+                                <div class="depositorLabel">
+                                    <div class="depositorNameLabel">Name</div>
+                                    <div class="depositorPriceLabel">Price</div>
+                                    <div class="depositorItemsLabel">Items</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jackpotBottomContainer">
+                            <div class="depositorMainInfo">
+
+                            </div>
+                            <div class="depositorContainer"><div class="jackpotDepositor winner" id="playerDepositor" style="display: block;"> <div class="depositorInfo"><img src="https://i.imgur.com/ICK2lr1.jpg" class="depositorProPic"> <div class="depositorName">Player 1 (You)</div> <div class="depositorValue" id="depositValue">$8909.79</div> <div class="depositorSkinContainer" id="playerDeposit"> <div class="depositorSkin covert" id="item237" title="Souvenir AWP | Dragon Lore WW"><div class="itemPrice">$1033.35</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5cB1g_zMyoD0mlOx5UM5ZWClcYCUdgU3Z1rQ_FK-xezngZO46MzOziQ1vSMmtCmIyxfkgx5SLrs4SgJFJKs/70fx70f"> </div><div class="depositorSkin covert" id="item42" title="Souvenir AWP | Dragon Lore FT"><div class="itemPrice">$1127.97</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5cB1g_zMyoD0mlOx5UM5ZWClcYCUdgU3Z1rQ_FK-xezngZO46MzOziQ1vSMmtCmIyxfkgx5SLrs4SgJFJKs/70fx70f"> </div><div class="depositorSkin covert" id="item148" title="Souvenir AWP | Dragon Lore MW"><div class="itemPrice">$1710.63</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5Mx2gv3--Y3nj1H6qBFvMWHyIo7Adw9raF6GrlK9lLi-jJO7tJ_JzyNh63F3sX_emUPkgQYMMLL2MDRAbQ/70fx70f"> </div><div class="depositorSkin classified" id="item314" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item217" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item333" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item13" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item109" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item85" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item66" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item59" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item92" title="Souvenir M4A1-S | Knight FN"><div class="itemPrice">$438.09</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item198" title="Souvenir M4A1-S | Knight MW"><div class="itemPrice">$365.01</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item204" title="Souvenir M4A1-S | Knight MW"><div class="itemPrice">$365.01</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div><div class="depositorSkin classified" id="item48" title="Souvenir M4A1-S | Knight MW"><div class="itemPrice">$365.01</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3mb-GkuP1P6jummJW4NFOhujT8om72VGy-kJpZjr0JYSWdg9sYwmBrwS2wOnt1JXo7Zqfm3M2vCJ35HzbnQv330-9f4-Ixw/70fx70f"> </div></div> </div> </div><div class="jackpotDepositor" id="jackpotDepositorbot24" style="display: block;"> <div class="depositorInfo"><img src="https://i.imgur.com/sDpf0y3.jpg" class="depositorProPic"> <div class="depositorName">MyBack</div> <div class="depositorValue" id="depositValue0">$209.21</div> <div class="depositorSkinContainer" id="deposit0"> <div class="depositorSkin stattrak" title="StatTrak™ AWP | Graphite FN"><div class="itemPrice">$196.79</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAZt7PDaZDBS4NmJlpKKgfjLP7LWnn9u5MRjjeyPoIqg0VCx-UFrN2v7JNCWIQVsYlGGqwS5lOrm1MW9uJ7Kynow6yVw52GdwULDeIeGVQ/70fx70f"> </div><div class="depositorSkin covert" title="M4A1-S | Hyper Beast BS"><div class="itemPrice">$9.89</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO1gb-Gw_alDLPIhm5D18d0i_rVyoTwiUKtlB89IT6mOtTDdFA7M1-ErAe_xOnvhMDpv53KnXFqvyd2t3razUfliRsaZuxrgfCACQLJHLRQjkw/70fx70f"> </div><div class="depositorSkin covert" title="M4A4 | Desert-Strike BS"><div class="itemPrice">$2.53</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszceClD4s-im5KGqP_xMq3IqWdQ-sJ0xLiTpNqs2FC1-0ptajinJIGWdQA3YF7U-gS9le3q0Z6_vsuby3djvSE8pSGKPaDC5MU/70fx70f"> </div></div> </div> </div><div class="jackpotDepositor" id="jackpotDepositorbot25" style="display: block;"> <div class="depositorInfo"><img src="https://i.imgur.com/Zi9J6CJ.jpg" class="depositorProPic"> <div class="depositorName">Skittle</div> <div class="depositorValue" id="depositValue1">$91.47</div> <div class="depositorSkinContainer" id="deposit1"> <div class="depositorSkin covert" title="AWP | Oni Taiji WW"><div class="itemPrice">$28.33</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17PLfYQJK7dK4jYG0mvLwOq7cqWdQ-sJ0xLuWpYql21W2r0A9N2r3d4PEdw86Mw2C_Afoxea8hJDo6J_Pn3ZjsyU8pSGKnbCLqT8/70fx70f"> </div><div class="depositorSkin stattrak" title="StatTrak™ M4A1-S | Golden Coil WW"><div class="itemPrice">$58.07</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uOxh7-Gw_alIITCmGpa7cd4nuz-8oP5jGu5rhc1JjTtLIfEdVQ-YA6G-FbqwOzs05Tp6smdzHdiuCUi5y7YnRG1gB9OOLE50OveFwutvS5J8A/70fx70f"> </div><div class="depositorSkin stattrak" title="StatTrak™ M249 | Magma FN"><div class="itemPrice">$1.05</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-jxcjhhwszHcy5L6NW3mr-HnvD8J4Tdl3lW7Yty0uiSrY-s2wHgqEE6Z2zwJdCVegY8NAmB_ljtkL_mjZG07s-fwCc3pGB8stBeF8Zo/70fx70f"> </div><div class="depositorSkin covert" title="R8 Revolver | Fade MW"><div class="itemPrice">$4.02</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopL-zJAt21uH3cDx96t2ykb-ZkuH7P63UhFRd4cJ5nqfA89uiiVGx8hVkYWDwItOSdwc-M1DZr1bowb3u18Tqus-fmCM17CQn-z-DyMgtirei/70fx70f"> </div></div> </div> </div><div class="jackpotDepositor" id="jackpotDepositorbot22" style="display: block;"> <div class="depositorInfo"><img src="https://i.imgur.com/Skzow5x.jpg" class="depositorProPic"> <div class="depositorName">Morty</div> <div class="depositorValue" id="depositValue2">$250.12</div> <div class="depositorSkinContainer" id="deposit2"> <div class="depositorSkin covert" title="M4A1-S | Golden Coil FN"><div class="itemPrice">$56.97</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uOxh7-Gw_alIITCmGpa7cd4nuz-8oP5jGu4ohQ0J3f2I4LEIVM5Zg3R-lW6lby5hse_tJqfy3Jj6CIq43jenBfiiB9IOOJvm7XAHiKtaglX/70fx70f"> </div><div class="depositorSkin covert" title="SSG 08 | Blood in the Water FT"><div class="itemPrice">$29.45</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopamie19f0Ob3YjVD_teJmYWPnuL5DLfQhGxUppdw0-3Hodyj3gThrhJuNT-gJ4-XJlc9ZwuD_1Low7u60JO-6pjPynp9-n51FR7Bxmg/70fx70f"> </div><div class="depositorSkin stattrak" title="StatTrak™ R8 Revolver | Reboot FN"><div class="itemPrice">$12.00</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopL-zJAt21uH3cih9_oSJl5mJkuXnI7TDglRd4cJ5ntbN9J7yjRqw_hY-a2v0co-cIwI-YFHR_wO2wuno0MLtu8_ByCNj6HMrti6Im0fhn1gSOcqlDG5e/70fx70f"> </div><div class="depositorSkin stattrak" title="StatTrak™ P2000 | Imperial FN"><div class="itemPrice">$1.65</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovrG1eVcwg8zJfAJSvozmxL-CmufxIbLQmlRD7cFOhuDG_Zi7iwDjrkFsZGrzI4GXd1NqYA7Zr1ntl-i7hJK7tMmbnyZgvyIhtniMmAv3308P9JxMBw/70fx70f"> </div><div class="depositorSkin knife" title="✯ Butterfly Knife | Crimson Web WW"><div class="itemPrice">$150.05</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf0ebcZThQ6tCvq4iSqODxMajum25V4dB8teXA54vwxgW2qEc5NW-iIYORcFI5NwzQ8lS7lOq50MW7tJSbnXQy7yRx4H7bnRGpwUYbInjudbk/70fx70f"> </div></div> </div> </div><div class="jackpotDepositor" id="jackpotDepositorbot28" style="display: block;"> <div class="depositorInfo"><img src="https://i.imgur.com/acTRiBk.jpg" class="depositorProPic"> <div class="depositorName">Bio</div> <div class="depositorValue" id="depositValue3">$64.44</div> <div class="depositorSkinContainer" id="deposit3"> <div class="depositorSkin covert" title="M4A4 | X-Ray FT"><div class="itemPrice">$5.95</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszQYzxb09Hiq42Ok_7hPoTdl3lW7Yt027yYoo6h0QWx_hVrNmGld4aRJAc5MwnWrATswbrogMe9u5vBmCFlpGB8sp0wSwbi/70fx70f"> </div><div class="depositorSkin covert" title="AUG | Chameleon FT"><div class="itemPrice">$1.54</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot6-iFAR17PLddgJB5N27kYyOmPn1OqnUqWZU7Mxkh9bN9J7yjRqxrUNua2H6J4SSJAZvNwmF8gC7xOrrjMLp6pvBz3Bm7ykk4XvZmUDhn1gSOYJAEb79/70fx70f"> </div><div class="depositorSkin covert" title="USP-S | Kill Confirmed FN"><div class="itemPrice">$56.95</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09-jq5WYh8j_OrfdqWhe5sN4mOTE8bP5gVO8v109YDj0do7Dcw9taA6C81K_k-_n1pfp6MnOnSZhu3Qm4SrfzBbkg01McKUx0iC2I2fd/70fx70f"> </div></div> </div> </div></div>
+                        </div>
+                    </div>
+                    <div class="unboxing" style="display: block;">
+                        <div class="backgroundImage"></div>
+                        <div class="caseDisplay" id="case">
+                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVk54dFBopqiqJghf1_b3cj9A4Nn4wYSJxPagMeyFw21Q68N32O3DotX021Gx_Uttaj_zJIHHJ1M5Yl6D-k_-n7lVjEgWRQ/240fx182f" id="caseDisplayImage">
+                            <div class="caseInfoContainer">
+                                <div class="caseName" id="caseName">ESL One Cologne 2014 Cobblestone Souvenir Package</div>
+                                <div class="priceContainer">
+                                    <div class="casePrice" id="casePrice">Case Price: $184.26  |</div>
+                                    <div class="keyPrice" id="keyPrice">Key Price: $2.50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="mainInfo">
+                    <div class="mainInfoLabel wallet">Wallet:
+                        <span class="money" id="money">$108651689.48</span>
+                    </div>
+                    <div class="mainInfoLabel inv" id="invSpace">Inventory Space:
+                        <span class="inventorySpace" id="inventorySpace">8/70</span>
+                        <div class="mainInfoLabelWarning tt" data-tt="Inventory over max capacity." style="display: none;">
+                            <i class="fa fa-exclamation-triangle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabContainer">
+                    <div class="tab active" id="inventoryTab">Inventory</div>
+                    <div class="tab" id="upgradeTab">Shop</div>
+                    <div class="tab" id="caseTab">Case</div>
+                    <div class="tab" id="jackpotTab">Jackpot</div>
+                    <div class="tab" id="coinTab">Coin Flip</div>
+                    <div class="tab" id="newsTab">News</div>
+                </div>
+                <div class="rightMain" style="bottom: 135px;">
+                    <div class="inventoryContainer" style="display: block;">
+                        <div class="inventoryTagContainer">
+                            <span class="inventoryTag">Inventory</span>
+                            <span class="inventoryValue">Value: $17126.22</span>
+                        </div>
+                        <div class="inventoryItemContainer"><div class="inventoryItem covert" id="item237" title="Souvenir AWP | Dragon Lore WW"><div class="itemPrice">$1033.35</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5cB1g_zMyoD0mlOx5UM5ZWClcYCUdgU3Z1rQ_FK-xezngZO46MzOziQ1vSMmtCmIyxfkgx5SLrs4SgJFJKs/70fx70f"> </div><div class="inventoryItem covert" id="item42" title="Souvenir AWP | Dragon Lore FT"><div class="itemPrice">$1127.97</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5cB1g_zMyoD0mlOx5UM5ZWClcYCUdgU3Z1rQ_FK-xezngZO46MzOziQ1vSMmtCmIyxfkgx5SLrs4SgJFJKs/70fx70f"> </div><div class="inventoryItem covert" id="item148" title="Souvenir AWP | Dragon Lore MW"><div class="itemPrice">$1710.63</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5Mx2gv3--Y3nj1H6qBFvMWHyIo7Adw9raF6GrlK9lLi-jJO7tJ_JzyNh63F3sX_emUPkgQYMMLL2MDRAbQ/70fx70f"> </div><div class="inventoryItem covert" id="item352" title="Souvenir AWP | Dragon Lore FN"><div class="itemPrice">$2885.91</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5Mx2gv3--Y3nj1H6qBFvMWHyIo7Adw9raF6GrlK9lLi-jJO7tJ_JzyNh63F3sX_emUPkgQYMMLL2MDRAbQ/70fx70f"> </div><div class="inventoryItem covert" id="item587" title="Souvenir AWP | Dragon Lore FN"><div class="itemPrice">$2885.91</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5Mx2gv3--Y3nj1H6qBFvMWHyIo7Adw9raF6GrlK9lLi-jJO7tJ_JzyNh63F3sX_emUPkgQYMMLL2MDRAbQ/70fx70f"> </div><div class="inventoryItem covert" id="item619" title="Souvenir AWP | Dragon Lore FN"><div class="itemPrice">$2885.91</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5Mx2gv3--Y3nj1H6qBFvMWHyIo7Adw9raF6GrlK9lLi-jJO7tJ_JzyNh63F3sX_emUPkgQYMMLL2MDRAbQ/70fx70f"> </div><div class="inventoryItem covert" id="item664" title="Souvenir AWP | Dragon Lore FN"><div class="itemPrice">$2885.91</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5Mx2gv3--Y3nj1H6qBFvMWHyIo7Adw9raF6GrlK9lLi-jJO7tJ_JzyNh63F3sX_emUPkgQYMMLL2MDRAbQ/70fx70f"> </div><div class="inventoryItem covert" id="item709" title="Souvenir AWP | Dragon Lore MW"><div class="itemPrice">$1710.63</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5Mx2gv3--Y3nj1H6qBFvMWHyIo7Adw9raF6GrlK9lLi-jJO7tJ_JzyNh63F3sX_emUPkgQYMMLL2MDRAbQ/70fx70f"> </div></div>
+                        <!--
+              <div class="inventoryItem">
+                <div class="itemPrice">$5.50</div>
+                <img src="http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbaqKAxf0v73dS9D69O4q4eHmPT_DLfYkWNF18lwmO7Eu4mh2lXj-RJtajjxJoWcIQ83Y13X-QO2ye_ojJ61u8yfynUwvXYq4XbD30vgIiQpgfY/360fx360f">
+              </div>
+            -->
+                    </div>
+                    <div class="upgradeContainer" style="display: none;">
+                        <div class="stackingUpgradeContainer">
+
+                        <div class="upgrade" id="upgrade1"> <div class="upgradePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/U8721VM9p9C2v1o6cKJ4qEnGqnE7IoTQgZI-VTdwyTBeimAcIoxXpgK8bPeslY9pPJIvB5IWW2-452kaM8heLSRgleGAr7BMx-94b6MohOf-Xwsn7-USVDXgHhOG1zPDeLmsxwRtYpItIUb2wskZ6I0FWp9DdsKkOtQslw/100fx100f" id="upgradePicture"></div> <div class="upgradeInfo"> <div class="upgradeName">Inventory Space</div> <div class="upgradeDesc">+1 to your max inventory space.</div> <div class="upgradePriceLabel">Price: <span class="upgradePrice">$15728640.00</span> </div> <div class="upgradeAmountLabel">Amount: <span class="upgradeAmount">20</span> </div> </div> </div><div class="upgrade" id="upgrade2"> <div class="upgradePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXX7gNTPcUlrBpNQ0LvROW-0vDYVkRLNhRStbOkJzgxnaXLdDkTuNnmzYbak6byYb2ExGoHvJ1z2b7Fp9igjlflrUJoYmCiJ4KLMlhpukSlLYY/100fx100f" id="upgradePicture"></div> <div class="upgradeInfo"> <div class="upgradeName">Key Discount</div> <div class="upgradeDesc">Discount Key Prices</div> <div class="upgradePriceLabel">Price: <span class="upgradePrice">$150.00</span> </div> <div class="upgradeAmountLabel">Amount: <span class="upgradeAmount">0</span> </div> </div> </div><div class="upgrade" id="upgrade3"> <div class="upgradePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/U8721VM9p9C2v1o6cKJ4qEnGqnE7IoTQgZI-VTdwyTBeimAcIoxXpgK8bPeslY9pPJIvB5IWW2-452kaM8heLSRgleGAr7BMx-94b6MohOf-Xwsn7-USVDXgHhOG1zPDeLmsxwRtYpItIUb2wskZ6I0FWp9DdsKkOtQslw/100fx100f" id="upgradePicture"></div> <div class="upgradeInfo"> <div class="upgradeName">More Money</div> <div class="upgradeDesc">More money per click +10</div> <div class="upgradePriceLabel">Price: <span class="upgradePrice">$500.00</span> </div> <div class="upgradeAmountLabel">Amount: <span class="upgradeAmount">0</span> </div> </div> </div></div>
+                        <div class="permUpgradeContainer">
+                            <div class="permUpgrade" id="permUpgrade1">
+                                <i class="fa fa-cubes fa-2x"></i>
+                                <span class="permUpgradeLabel" id="permUpgradeLabel1">..........</span>
+                            </div>
+                            <div class="permUpgrade locked" id="permUpgrade2">
+                                <i class="fa fa-exchange fa-2x"></i>
+                                <span class="permUpgradeLabel" id="permUpgradeLabel2">..........</span>
+                            </div>
+                            <div class="permUpgrade locked" id="permUpgrade3">
+                                <i class="fa fa-cubes fa-2x"></i>
+                                <span class="permUpgradeLabel" id="permUpgradeLabel3">..........</span>
+                            </div>
+                            <div class="permUpgrade locked" id="permUpgrade4">
+                                <i class="fa fa-cubes fa-2x"></i>
+                                <span class="permUpgradeLabel" id="permUpgradeLabel4">..........</span>
+                            </div>
+                        </div>
+                        <!--
+              <div class="upgrade cantAfford">
+                <div class="upgradePicture"></div>
+                <div class="upgradeInfo">
+                  <div class="upgradeName">Test Upgrade</div>
+                  <div class="upgradeDesc">Test Description lorem ipsum dolar sit amet</div>
+                  <div class="upgradePrice">$999999999.00</div>
+                </div>
+              </div>
+            -->
+                    </div>
+                    <div class="caseContainer" style="display: none;">
+                        <!--
+              <div class="case locked">
+                <div class="casePicture"></div>
+                <div class="caseInfo">
+                  <div class="caseName"></div>
+                  <div class="caseValue"></div>
+                </div>
+              </div>
+            -->
+                    <div class="case" id="case1"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsRVx4MwFo5_T3eAQ3i6DMIW0X7ojiwoHax6egMOKGxj4G68Nz3-jCp4itjFWx-ktqfSmtcwqVx6sT" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Weapon Case 1</div> <div class="caseValue">Value: $6.90</div> </div> </div><div class="case" id="case2"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVk5kKhZDpYX3e1YznfCcdzkR74vnw9TZwa-sYOOCzzoF6ZJ0jL6Qp9uj3Qbj_Uc6Z2z1I9WLMlhp9VPHu3g" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">eSports 2013 Case</div> <div class="caseValue">Value: $9.57</div> </div> </div><div class="case" id="case3"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsXE1xNwVDv7WrFA5pnabNJGwSuN3gxtnawKOlMO6HzzhQucAm0uvFo4n2iw3h_UM-ZmilJNeLMlhpjfjxEoE" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Bravo Case</div> <div class="caseValue">Value: $10.64</div> </div> </div><div class="case" id="case4"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsRVx4MwFo5PT8elUwgKKZJmtEvo_kxITZk6StNe-Fz2pTu8Aj3eqVpIqgjVfjrRI9fSmtc1Nw-Kh3" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">CS:GO Weapon Case 2</div> <div class="caseValue">Value: $1.57</div> </div> </div><div class="case" id="case5"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVk5kKhZDpYX3e1Yz7KKcPzwav9jnzdfdlfWmY7_TzmkF6ZMlj77A9o3x0Qe1qhBkZGjxI9LBJgMgIQaH1G7WeaA" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">eSports 2013 Winter Case</div> <div class="caseValue">Value: $0.30</div> </div> </div><div class="case" id="case6"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFYu0aKfJz8a793gxNLfzvOkMunUwWgH7JIjj-qW8d7x2VXt_UBuMT3zIpjVLFEGDSGUSQ" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Winter Offensive Weapon Case</div> <div class="caseValue">Value: $1.68</div> </div> </div><div class="case" id="case7"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsRVx4MwFo5fSnf15k0KGacG0UtYXnzdTdkq-gariGlDgHvMcmjryZotqg2wCxrUVtfSmtc20v4quI" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">CS:GO Weapon Case 3</div> <div class="caseValue">Value: $0.41</div> </div> </div><div class="case" id="case8"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFUuh6qZJmlD7tiyl4OIlaGhYuLTzjhVupJ12urH89ii3lHlqEdoMDr2I5jVLFFSv_J2Rg" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Operation Phoenix Weapon Case</div> <div class="caseValue">Value: $0.12</div> </div> </div><div class="case" id="case9"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQu0PaQIm9DtY6wzYaIxKWtN7iJwW8G6Z0h2LqWoY6s2Qy2-0Q_Nzv7IJjVLFGZqUbjlQ" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Huntsman Weapon Case</div> <div class="caseValue">Value: $1.04</div> </div> </div><div class="case" id="case10"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFMu1aPMI24auITjxteJwPXxY72AkGgIvZAniLjHpon2jlbl-kpvNjz3JJjVLFG9rl1YLQ" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Operation Breakout Weapon Case</div> <div class="caseValue">Value: $0.07</div> </div> </div><div class="case" id="case11"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVk5kKhZDpYX3e1Y07ODdfDBH_pKzwdfSkqTyZLjQxjsF7sEoiLyQ9I2ljgHt_EZlYzr6J4DHIA9oZ1-D5BHglkR7Cs6C" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">eSports 2014 Summer Case</div> <div class="caseValue">Value: $0.46</div> </div> </div><div class="case" id="case12"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFIuh6rJImVGvtjllYaNka6la7rUxWkE65BzibvD9N7z0Q22-0Fka2GlJ5jVLFHqavWW2g" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Operation Vanguard Weapon Case</div> <div class="caseValue">Value: $0.28</div> </div> </div><div class="case" id="case13"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFEuh_KQJTtEuI63xIXbxqOtauyClTMEsJV1jruS89T3iQKx_BBqa2j3JpjVLFH1xpp0EQ" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Chroma Case</div> <div class="caseValue">Value: $0.10</div> </div> </div><div class="case" id="case14"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFAuhqSaKWtEu43mxtbbk6b1a77Twm4Iu8Yl3bCU9Imii1Xt80M5MmD7JZjVLFH-6VnQJQ" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Chroma 2 Case</div> <div class="caseValue">Value: $0.15</div> </div> </div><div class="case" id="case15"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FF8ugPDMIWpAuIq1w4KIlaChZOyFwzgJuZNy3-2T89T0jlC2rhZla2vwIJjVLFHz75yKpg" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Falchion Case</div> <div class="caseValue">Value: $0.05</div> </div> </div><div class="case" id="case16"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FF4u1qubIW4Su4mzxYHbzqGtZ-KGlz8EuJcg3rnE9NiijVe3_UY-Zzr2JJjVLFEEeiQRtg" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Shadow Case</div> <div class="caseValue">Value: $0.05</div> </div> </div><div class="case" id="case17"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFYwnfKfcG9HvN7iktaOkqD1auLTxD5SvZYgiLvFpo7xjVLh-kdrYWnzcoGLMlhpsyM-5vg" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Revolver Case</div> <div class="caseValue">Value: $0.04</div> </div> </div><div class="case" id="case18"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFYxnaeQImRGu4S1x9TawfSmY-iHkmoD7cEl2LiQpIjz3wPl_ERkYWHwLY-LMlhp9pkR_UQ" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Operation Wildfire Case</div> <div class="caseValue">Value: $0.06</div> </div> </div><div class="case" id="case19"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFYynaSdJGhE74y0wNWIw_OlNuvXkDpSuZQmi--SrN-h3gey-Uo6YWmlIoCLMlhplhFFvwI" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Chroma 3 Case</div> <div class="caseValue">Value: $1.29</div> </div> </div><div class="case" id="case20"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFYznarJJjkQ6ovjw4SPlfP3auqEl2oBuJB1j--WoY322QziqkdpZGr3IteLMlhpw4RJCv8" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Gamma Case</div> <div class="caseValue">Value: $0.47</div> </div> </div><div class="case" id="case21"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVk54dFBopqiqJghf1_b3cj9A4Nn4wYSJxPagMeyFw21Q68N32O3DotX021Gx_Uttaj_zJIHHJ1M5Yl6D-k_-n7lVjEgWRQ" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">ESL One Cologne 2014 Cobblestone Souvenir Package</div> <div class="caseValue">Value: $184.26</div> </div> </div><div class="case" id="case22"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFY5naqQIz4R7Yjix9bZkvKiZrmAzzlTu5AoibiT8d_x21Wy8hY_MWz1doSLMlhpM3FKbNs" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Clutch Case</div> <div class="caseValue">Value: $0.35</div> </div> </div><div class="case" id="case23"> <div class="casePicture"> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFY3navMJWgQtNm1ldLZzvOiZr-BlToIsZcoi-yTpdutiVW2-Es4NWjwIo-LMlhpinMS53M" id="casePicture"></div> <div class="caseInfo"> <div class="caseTitle">Operation Hydra Case</div> <div class="caseValue">Value: $1.79</div> </div> </div></div>
+                    <div class="jackpotRightContainer" style="display: none;">
+                        <div class="jackpotDifficultyContainer">
+                            <div class="jackpotDifficulty" id="low">Low</div>
+                            <div class="jackpotDifficulty" id="medium">Medium</div>
+                            <div class="jackpotDifficulty active" id="high">High</div>
+                        </div>
+                        <div class="inventoryTagContainer">
+                            <span class="inventoryTag">Inventory</span>
+                            <span class="inventoryValue">Value: $17126.22</span>
+                        </div>
+                        <div class="jackpotRightPlayer"><div class="inventorySwapItem covert" id="item237" title="Souvenir AWP | Dragon Lore WW"><div class="itemPrice">$1033.35</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5cB1g_zMyoD0mlOx5UM5ZWClcYCUdgU3Z1rQ_FK-xezngZO46MzOziQ1vSMmtCmIyxfkgx5SLrs4SgJFJKs/70fx70f"> </div><div class="inventorySwapItem covert" id="item42" title="Souvenir AWP | Dragon Lore FT"><div class="itemPrice">$1127.97</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5cB1g_zMyoD0mlOx5UM5ZWClcYCUdgU3Z1rQ_FK-xezngZO46MzOziQ1vSMmtCmIyxfkgx5SLrs4SgJFJKs/70fx70f"> </div><div class="inventorySwapItem covert" id="item148" title="Souvenir AWP | Dragon Lore MW"><div class="itemPrice">$1710.63</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5Mx2gv3--Y3nj1H6qBFvMWHyIo7Adw9raF6GrlK9lLi-jJO7tJ_JzyNh63F3sX_emUPkgQYMMLL2MDRAbQ/70fx70f"> </div><div class="inventorySwapItem covert" id="item352" title="Souvenir AWP | Dragon Lore FN"><div class="itemPrice">$2885.91</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17P7NdTRH-t26q4SZlvD7PYTQgXtu5Mx2gv3--Y3nj1H6qBFvMWHyIo7Adw9raF6GrlK9lLi-jJO7tJ_JzyNh63F3sX_emUPkgQYMMLL2MDRAbQ/70fx70f"> </div><div class="inventorySwapItem milspec" id="item486" title="Souvenir Nova | Green Apple MW"><div class="itemPrice">$0.59</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpouLWzKjhz3MzPYzhH4uO6nYeDg8j4MqnWkyVXvscj27qQo4-t2AS2qUJlY2vxIoeXJwJsaF7VrFbqwu_t0J7puMvM1zI97ZcHCheM/70fx70f"> </div><div class="inventorySwapItem milspec" id="item487" title="Souvenir Sawed-Off | Rust Coat FN"><div class="itemPrice">$1.12</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbuyLgNv1fX3cCx9_8izkYy0m_7zO6_ummpD78A_iLqXpo-ljgWxrhVkYDigI4Scc1A2M17UrlK9ybq80cK0vpzByndjuD5iuyiTvuM2bA/70fx70f"> </div><div class="inventorySwapItem milspec" id="item488" title="Souvenir Dual Berettas | Briar FN"><div class="itemPrice">$0.37</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf2-r3ZzRM6c-JmImMn-PLP7rDkW4f6sck2r_Hpd6h2Qzg-0A_azj3LNCSegQ3MwyD-le7kOnu1pXtu5qdyWwj5HeoyT8EYw/70fx70f"> </div><div class="inventorySwapItem milspec" id="item489" title="Souvenir Dual Berettas | Briar FT"><div class="itemPrice">$0.28</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf2-r3ZzRM6c-JmYWPnuL5DLfQhGxUpp0o2LzAotmh2gCw-xI5MGCid9XHJgVsZVuB_QW5k-3rjMLvucydzHR9-n51GgElP-8/70fx70f"> </div><div class="inventorySwapItem milspec" id="item490" title="Souvenir UMP-45 | Indigo BS"><div class="itemPrice">$0.37</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3eDNG5du5q4GFk8jzIb7IqWNU6dNoteXA54vwxlWx-hY_aj_xJ4-cd1A5NQqB_gPvxbrsgpW975-YnCBjuXEg5X2OzUOpwUYbVdCgv5I/70fx70f"> </div><div class="inventorySwapItem milspec" id="item491" title="Souvenir UMP-45 | Indigo WW"><div class="itemPrice">$0.57</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1JfwPz3eDNG5du5q4GFk8jzIb7IqWZU7Mxkh9bN9J7yjRrjrRJkNmundYDDIwJoMwnZ_ge7l7zmhcDvvpTJyiZn7il24XnamUG0n1gSObNpNGwL/70fx70f"> </div><div class="inventorySwapItem milspec" id="item492" title="Souvenir Sawed-Off | Rust Coat BS"><div class="itemPrice">$0.27</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbuyLgNv1fX3cCx9_8izkYy0n_L1JaLummpD78A_ju_E8dT3jA2wrRBoZm71JIbEcVc4YV_R8lXqkrzujJW7u8_AmiBi7z5iuyhvCAhQsg/70fx70f"> </div><div class="inventorySwapItem restricted" id="item493" title="Souvenir CZ75-Auto | Chalice MW"><div class="itemPrice">$43.54</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf0v73YzJb7dCJmImMn-PLP7rDkW4f7px33evFrYmg2wblrRJsZm7xddLGcFQ5ZljV-le-ybvqgJG878mYn2wj5HevAX6yDA/70fx70f"> </div><div class="inventorySwapItem milspec" id="item494" title="Souvenir MAC-10 | Indigo BS"><div class="itemPrice">$0.24</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldfwPz3eDNG5du5q4GFk8jzIb7IqWNU6dNoteXA54vwxge3_0ZoYmjzLYaVcANtZl7S-QC2wu_vhpC16cmczHRguXEisXjcnBSpwUYbsWVgv94/70fx70f"> </div><div class="inventorySwapItem milspec" id="item495" title="Souvenir SCAR-20 | Storm WW"><div class="itemPrice">$0.14</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbmkOVUw7ODHTi5W4867kpKEmePLPr7Vn35c18lwmO7Eu470iVKy_BBpYG6mJIaRcAI4aVqF_FK9wLvmhZ7t7ZzJwSY2s3Fw7XjD30vgJf6_CL0/70fx70f"> </div><div class="inventorySwapItem milspec" id="item496" title="Souvenir SCAR-20 | Storm FN"><div class="itemPrice">$2.57</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbmkOVUw7ODHTi5W4867kpKEmePLP7LWnn9u5MRjjeyPpo7wilC2qBdoNjjxddOddwdtNQzSq1G4le7pg5W9vpydyXM26HQl7GGdwUJSn_EJvA/70fx70f"> </div><div class="inventorySwapItem restricted" id="item497" title="Souvenir CZ75-Auto | Chalice MW"><div class="itemPrice">$43.54</div> <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf0v73YzJb7dCJmImMn-PLP7rDkW4f7px33evFrYmg2wblrRJsZm7xddLGcFQ5ZljV-le-ybvqgJG878mYn2wj5HevAX6yDA/70fx70f"> </div></div>
+                        <div class="jackpotRightSTBTag">Skins to bet:</div>
+                        <div class="jackpotRightToBet"></div>
+                        <div class="jackpotRightInfo">
+                            <div class="jackpotRightValue">
+                                <span class="spanTag">Value: </span>
+                                <span class="jackpotRightValueTotal">$0.00</span>
+                            </div>
+                            <div class="jackpotRightSkins">
+                                <span class="spanTag">Skins: </span>
+                                <span class="jackpotRightSkinsTotal">0/15</span>
+                            </div>
+                            <div class="jackpotRightStartButton">Enter Jackpot</div>
+                        </div>
+                    </div>
+                    <div class="coinContainer" style="display: none;">
+                        <br>
+                        <br>
+                        <br>
+                        <center>
+                            <button id="btnFlip">
+                                <img src="https://i.imgur.com/Ga7WRKc.png">
+                            </button>							
+                        </center>
+                    </div>
+					<div align="center" class="newsContainer" style="display: none;">
+						<span class="inventoryTag">News</span>
+						<br>
+						Help improve the game by taking this short survey: <a href="https://goo.gl/forms/9gVUDKef4VX9KI6P2">https://goo.gl/forms/9gVUDKef4VX9KI6P2</a>
+						<br> A poll will be linked on the 25th of Sept. using the most suggested ideas from the survey.
+						<br>
+						<span class="inventoryTag">Useful Links</span>
+						<br>
+						Subreddit: <a href="https://www.reddit.com/r/csgoclicker/">https://www.reddit.com/r/csgoclicker/</a>
+						<br>
+						The Official Discord: <a href="https://discord.gg/9zSrah6">https://discord.gg/9zSrah6</a>
+						<br>
+						<span class="inventoryTag">Changelog | 9/29/2018</span>
+						<br>
+						You can now add your customized username and avatar. They will also appear on the jackpot page. Note: This doesn't mean that there is online functionability in the game.
+						<br>
+						<span class="inventoryTag">Changelog | 9/13/2018</span>
+						<br>
+						Fixed Coinflip, also made it so you can't accidently break your save on Coinflip.
+						<br>
+						Added an confirmation for clearing saves.
+						<br>
+						<span class="inventoryTag">Changelog | 9/12/2018</span>
+						<br>
+						Now you can actually save settings. To reenable, tick and untick.
+						<br>
+						Fixed cheating (rip Cheating videos :9)
+                    </div>
+                    <div class="tradeButtonContainer" style="display: block;">
+                        <div class="tradeButton" id="acceptButton">ACCEPT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js" type="text/javascript"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104065563-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
